@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D37669921640FC100DE868B /* GimmikViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D37669821640FC100DE868B /* GimmikViewController.swift */; };
 		0D7A66DE2163F04500FF4BA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A66DD2163F04500FF4BA4 /* AppDelegate.swift */; };
 		0D7A66E32163F04500FF4BA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7A66E12163F04500FF4BA4 /* Main.storyboard */; };
 		0D7A66E52163F04800FF4BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7A66E42163F04800FF4BA4 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D37669821640FC100DE868B /* GimmikViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimmikViewController.swift; sourceTree = "<group>"; };
 		0D7A66DA2163F04500FF4BA4 /* GimmikStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GimmikStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7A66DD2163F04500FF4BA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D7A66E22163F04500FF4BA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D37669421640F3600DE868B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0D37669621640F6200DE868B /* Networking */,
+				0D37669521640F5A00DE868B /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0D37669521640F5A00DE868B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0D37669821640FC100DE868B /* GimmikViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0D37669621640F6200DE868B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		0D7A66D12163F04400FF4BA4 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +138,7 @@
 		0D7A66DC2163F04500FF4BA4 /* GimmikStore */ = {
 			isa = PBXGroup;
 			children = (
+				0D37669421640F3600DE868B /* Modules */,
 				0D7A66DD2163F04500FF4BA4 /* AppDelegate.swift */,
 				0D7A66E12163F04500FF4BA4 /* Main.storyboard */,
 				0D7A66E42163F04800FF4BA4 /* Assets.xcassets */,
@@ -388,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D37669921640FC100DE868B /* GimmikViewController.swift in Sources */,
 				0D7A66DE2163F04500FF4BA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
