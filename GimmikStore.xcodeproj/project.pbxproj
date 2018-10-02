@@ -13,6 +13,9 @@
 		0D7A66E82163F04800FF4BA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7A66E62163F04800FF4BA4 /* LaunchScreen.storyboard */; };
 		0D7A66F32163F04800FF4BA4 /* GimmikStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A66F22163F04800FF4BA4 /* GimmikStoreTests.swift */; };
 		0D7A66FE2163F04800FF4BA4 /* GimmikStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A66FD2163F04800FF4BA4 /* GimmikStoreUITests.swift */; };
+		4ACE0D33493C33821B307A57 /* Pods_GimmikStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964A572C9F89EA04BDF98D10 /* Pods_GimmikStore.framework */; };
+		4DA7748C779E7F33726F8835 /* Pods_GimmikStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */; };
+		F442D66EFB18A142258D160E /* Pods_GimmikStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B8AD44478512004F13ABF2 /* Pods_GimmikStoreTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,15 @@
 		0D7A66F92163F04800FF4BA4 /* GimmikStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GimmikStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7A66FD2163F04800FF4BA4 /* GimmikStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimmikStoreUITests.swift; sourceTree = "<group>"; };
 		0D7A66FF2163F04800FF4BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GimmikStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F9B92A91908F13217477FE /* Pods-GimmikStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreTests/Pods-GimmikStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C5D1B44F5A999FDC81A5307 /* Pods-GimmikStoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreUITests/Pods-GimmikStoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D9B3952CAEB3076CF90F947 /* Pods-GimmikStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore.release.xcconfig"; sourceTree = "<group>"; };
+		71B8AD44478512004F13ABF2 /* Pods_GimmikStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GimmikStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF20E48AAD947CFC39828A6 /* Pods-GimmikStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreTests/Pods-GimmikStoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		964A572C9F89EA04BDF98D10 /* Pods_GimmikStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GimmikStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69EC2FF77239A3E95F86FA9 /* Pods-GimmikStoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreUITests/Pods-GimmikStoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3A25901C6CC1CACEBD1AD7D /* Pods-GimmikStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACE0D33493C33821B307A57 /* Pods_GimmikStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F442D66EFB18A142258D160E /* Pods_GimmikStoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA7748C779E7F33726F8835 /* Pods_GimmikStoreUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,8 @@
 				0D7A66F12163F04800FF4BA4 /* GimmikStoreTests */,
 				0D7A66FC2163F04800FF4BA4 /* GimmikStoreUITests */,
 				0D7A66DB2163F04500FF4BA4 /* Products */,
+				1AEC3ED4FE9324AC5C465011 /* Pods */,
+				8F576BE9F55AF046662E8566 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +139,29 @@
 			path = GimmikStoreUITests;
 			sourceTree = "<group>";
 		};
+		1AEC3ED4FE9324AC5C465011 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3A25901C6CC1CACEBD1AD7D /* Pods-GimmikStore.debug.xcconfig */,
+				5D9B3952CAEB3076CF90F947 /* Pods-GimmikStore.release.xcconfig */,
+				58F9B92A91908F13217477FE /* Pods-GimmikStoreTests.debug.xcconfig */,
+				8DF20E48AAD947CFC39828A6 /* Pods-GimmikStoreTests.release.xcconfig */,
+				D69EC2FF77239A3E95F86FA9 /* Pods-GimmikStoreUITests.debug.xcconfig */,
+				5C5D1B44F5A999FDC81A5307 /* Pods-GimmikStoreUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F576BE9F55AF046662E8566 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				964A572C9F89EA04BDF98D10 /* Pods_GimmikStore.framework */,
+				71B8AD44478512004F13ABF2 /* Pods_GimmikStoreTests.framework */,
+				17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D7A67022163F04800FF4BA4 /* Build configuration list for PBXNativeTarget "GimmikStore" */;
 			buildPhases = (
+				FC955F11FF15181C5B1D7FF9 /* [CP] Check Pods Manifest.lock */,
 				0D7A66D62163F04400FF4BA4 /* Sources */,
 				0D7A66D72163F04400FF4BA4 /* Frameworks */,
 				0D7A66D82163F04400FF4BA4 /* Resources */,
+				B6192312093671D306927F42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D7A67052163F04800FF4BA4 /* Build configuration list for PBXNativeTarget "GimmikStoreTests" */;
 			buildPhases = (
+				F81BCA62F2C1517EC12B7A03 /* [CP] Check Pods Manifest.lock */,
 				0D7A66EA2163F04800FF4BA4 /* Sources */,
 				0D7A66EB2163F04800FF4BA4 /* Frameworks */,
 				0D7A66EC2163F04800FF4BA4 /* Resources */,
@@ -164,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D7A67082163F04800FF4BA4 /* Build configuration list for PBXNativeTarget "GimmikStoreUITests" */;
 			buildPhases = (
+				A5ABBF60FD87D2E667E7F196 /* [CP] Check Pods Manifest.lock */,
 				0D7A66F52163F04800FF4BA4 /* Sources */,
 				0D7A66F62163F04800FF4BA4 /* Frameworks */,
 				0D7A66F72163F04800FF4BA4 /* Resources */,
@@ -247,6 +291,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5ABBF60FD87D2E667E7F196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GimmikStoreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6192312093671D306927F42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81BCA62F2C1517EC12B7A03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GimmikStoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC955F11FF15181C5B1D7FF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GimmikStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D7A66D62163F04400FF4BA4 /* Sources */ = {
@@ -426,6 +561,7 @@
 		};
 		0D7A67032163F04800FF4BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A25901C6CC1CACEBD1AD7D /* Pods-GimmikStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +581,7 @@
 		};
 		0D7A67042163F04800FF4BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D9B3952CAEB3076CF90F947 /* Pods-GimmikStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +601,7 @@
 		};
 		0D7A67062163F04800FF4BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F9B92A91908F13217477FE /* Pods-GimmikStoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +623,7 @@
 		};
 		0D7A67072163F04800FF4BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF20E48AAD947CFC39828A6 /* Pods-GimmikStoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +645,7 @@
 		};
 		0D7A67092163F04800FF4BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D69EC2FF77239A3E95F86FA9 /* Pods-GimmikStoreUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +666,7 @@
 		};
 		0D7A670A2163F04800FF4BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5D1B44F5A999FDC81A5307 /* Pods-GimmikStoreUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

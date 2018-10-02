@@ -1,0 +1,6 @@
+framework module Pods_GimmikStore {
+  umbrella header "Pods-GimmikStore-umbrella.h"
+
+  export *
+  module * { export * }
+}
