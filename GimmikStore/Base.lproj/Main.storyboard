@@ -38,7 +38,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-0i-wve">
+                            <searchBar contentMode="redraw" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-0i-wve">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -59,16 +59,17 @@
                     <connections>
                         <outlet property="gimmikCollectionView" destination="W0R-xC-Br8" id="UsU-3A-bJy"/>
                         <outlet property="searchBar" destination="OYd-0i-wve" id="vnl-Rk-9Ue"/>
+                        <outlet property="searchBarTopConstraint" destination="Pvi-En-YaK" id="Jbe-ol-NZq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Gimmik Navigation Controller-->
         <scene sceneID="s7p-e5-IHr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oNG-Du-nVy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oNG-Du-nVy" customClass="GimmikNavigationController" customModule="GimmikStore" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yxF-Rm-Ds4">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

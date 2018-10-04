@@ -20,6 +20,7 @@
 		0D7A66E82163F04800FF4BA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7A66E62163F04800FF4BA4 /* LaunchScreen.storyboard */; };
 		0D7A66F32163F04800FF4BA4 /* GimmikStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A66F22163F04800FF4BA4 /* GimmikStoreTests.swift */; };
 		0D7A66FE2163F04800FF4BA4 /* GimmikStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A66FD2163F04800FF4BA4 /* GimmikStoreUITests.swift */; };
+		0DF1919921667A9D00BAD48A /* GimmikNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF1919821667A9D00BAD48A /* GimmikNavigationController.swift */; };
 		4ACE0D33493C33821B307A57 /* Pods_GimmikStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964A572C9F89EA04BDF98D10 /* Pods_GimmikStore.framework */; };
 		4DA7748C779E7F33726F8835 /* Pods_GimmikStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */; };
 		5BA7208621666CDE002CB056 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7208521666CDE002CB056 /* ApiRouter.swift */; };
@@ -64,6 +65,7 @@
 		0D7A66F92163F04800FF4BA4 /* GimmikStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GimmikStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7A66FD2163F04800FF4BA4 /* GimmikStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimmikStoreUITests.swift; sourceTree = "<group>"; };
 		0D7A66FF2163F04800FF4BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DF1919821667A9D00BAD48A /* GimmikNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimmikNavigationController.swift; sourceTree = "<group>"; };
 		17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GimmikStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F9B92A91908F13217477FE /* Pods-GimmikStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreTests/Pods-GimmikStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BA7208521666CDE002CB056 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApiRouter.swift; path = GimmikStore/Modules/Networking/ApiRouter.swift; sourceTree = SOURCE_ROOT; };
@@ -108,6 +110,7 @@
 		0D37669421640F3600DE868B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0DF1919721667A6300BAD48A /* Navigation */,
 				0D37669621640F6200DE868B /* Networking */,
 				0D37669521640F5A00DE868B /* Search */,
 			);
@@ -212,6 +215,14 @@
 				0D37669E216413C900DE868B /* Gimmik.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		0DF1919721667A6300BAD48A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0DF1919821667A9D00BAD48A /* GimmikNavigationController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		1AEC3ED4FE9324AC5C465011 /* Pods */ = {
@@ -452,6 +463,7 @@
 			files = (
 				0D3766A32164154E00DE868B /* GimmikCollectionViewCell.swift in Sources */,
 				0D37669921640FC100DE868B /* GimmikViewController.swift in Sources */,
+				0DF1919921667A9D00BAD48A /* GimmikNavigationController.swift in Sources */,
 				5BA7208821666D05002CB056 /* ApiClient.swift in Sources */,
 				0D37669F216413C900DE868B /* Gimmik.swift in Sources */,
 				0D37669D216413B400DE868B /* GimmikCollectionViewDelegate.swift in Sources */,

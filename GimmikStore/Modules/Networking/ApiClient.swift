@@ -10,14 +10,10 @@ import Foundation
 import Alamofire
 
 class ApiClient {
-    static func search(term: String, entity: String = "software", limit: Int = 2, completion:@escaping (GimmikResult?)->Void) {
+    static func search(term: String, entity: String = "software", limit: Int = 12, completion:@escaping (GimmikResult?)->Void) {
         Alamofire.request(ApiRouter.search(term, entity, limit))
             .responseData { response in
-                
-                //response check
-                print(response)
-                
-                //response handler
+    
                 guard response.result.isSuccess,
                     let value = response.result.value else {
                         print("Error while fetching Apps: \(String(describing: response.result.error))")

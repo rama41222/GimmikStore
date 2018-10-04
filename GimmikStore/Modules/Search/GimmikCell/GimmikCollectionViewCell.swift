@@ -16,9 +16,13 @@ class GimmikCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var lblOrganization: UILabel!
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imgApp.image = nil
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
-        imgApp.image = nil
+        cellSetup()
     }
     
     func fill(with gimmik: Gimmik) -> Void {
@@ -29,6 +33,10 @@ class GimmikCollectionViewCell: UICollectionViewCell {
         lblTitle.text = gimmik.getName()
         lblDescription.text = gimmik.getDescription()
         lblOrganization.text = gimmik.getMaker()
+    }
+    
+    func cellSetup() -> Void {
+        imgApp.layer.cornerRadius = 10.0
     }
 
 }
