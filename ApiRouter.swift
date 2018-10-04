@@ -8,3 +8,17 @@
 
 import Foundation
 import Alamofire
+
+enum ApiRouter: URLRequestConvertible {
+    
+    case search(String, String, Int)
+    
+    var method: HTTPMethod {
+        switch self {
+        case .search:
+            return .get
+        }
+    }
+    
+    
+}

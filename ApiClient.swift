@@ -14,19 +14,7 @@ class ApiClient {
         Alamofire.request(ApiRouter.search(term, entity, limit))
             .responseData { response in
                 print(response)
-                guard response.result.isSuccess,
-                    let value = response.result.value else {
-                        print("Error while fetching Apps: \(String(describing: response.result.error))")
-                        completion(nil)
-                        return
-                }
-                do {
-                    let gimmikApps = try JSONDecoder().decode(GimmikResult.self, from: value)
-                    completion(gimmikApps)
-                } catch let error {
-                    print("Error while fetching Apps, JSON Parsing error: \(error)")
-                    completion(nil)
-                }
+                
         }
     }
 }
