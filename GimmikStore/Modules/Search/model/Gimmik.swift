@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Gimmik {
+struct Gimmik: Decodable {
     var id: String?
     var name: String?
     var image: String?
