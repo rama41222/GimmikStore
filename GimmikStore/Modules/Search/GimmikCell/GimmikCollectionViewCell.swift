@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GimmikCollectionViewCell: UICollectionViewCell {
 
@@ -17,15 +18,17 @@ class GimmikCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        imgApp.image = nil
-        // Initialization code
+        imgApp.image = nil
     }
     
     func fill(with gimmik: Gimmik) -> Void {
-//        imgApp.image = samp
-        lblTitle.text = gimmik.name
-        lblDescription.text = gimmik.description
-        lblOrganization.text = gimmik.organization
+        guard let image  = gimmik.getImageIcon() else {
+            return;
+        }
+        imgApp.kf.setImage(with: URL(string: image))
+        lblTitle.text = gimmik.getName()
+        lblDescription.text = gimmik.getDescription()
+        lblOrganization.text = gimmik.getMaker()
     }
 
 }

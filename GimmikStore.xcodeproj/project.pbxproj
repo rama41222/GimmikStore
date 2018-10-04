@@ -104,7 +104,6 @@
 		0D37669421640F3600DE868B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				0D37669621640F6200DE868B /* Networking */,
 				0D37669521640F5A00DE868B /* Search */,
 			);
 			path = Modules;
@@ -113,20 +112,13 @@
 		0D37669521640F5A00DE868B /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				0DCCAAD92166507C00374B27 /* model */,
 				0D3766A02164153400DE868B /* GimmikCell */,
 				0D37669821640FC100DE868B /* GimmikViewController.swift */,
 				0D37669A216413A300DE868B /* GimmikCollectionViewDataSource.swift */,
 				0D37669C216413B400DE868B /* GimmikCollectionViewDelegate.swift */,
-				0D37669E216413C900DE868B /* Gimmik.swift */,
 			);
 			path = Search;
-			sourceTree = "<group>";
-		};
-		0D37669621640F6200DE868B /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		0D3766A02164153400DE868B /* GimmikCell */ = {
@@ -198,6 +190,14 @@
 				0D7A66FF2163F04800FF4BA4 /* Info.plist */,
 			);
 			path = GimmikStoreUITests;
+			sourceTree = "<group>";
+		};
+		0DCCAAD92166507C00374B27 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0D37669E216413C900DE868B /* Gimmik.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		1AEC3ED4FE9324AC5C465011 /* Pods */ = {
@@ -387,12 +387,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

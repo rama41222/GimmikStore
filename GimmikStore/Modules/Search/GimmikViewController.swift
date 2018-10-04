@@ -17,9 +17,12 @@ class GimmikViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataSource.fetch(term: "puzzel")
         setup()
-        dataSource.fetch()
-        gimmikCollectionView.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+         gimmikCollectionView.reloadData()
     }
     
     func setup() -> Void {
@@ -27,4 +30,5 @@ class GimmikViewController: UIViewController {
         gimmikCollectionView.dataSource = dataSource
         gimmikCollectionView.delegate = delegate
     }
+    
 }
