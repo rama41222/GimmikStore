@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import Almofire
+
+class ApiClient {
+    static func search(term: String, entity: String = "software", limit: Int = 2, completion:@escaping (GimmikResult?)->Void) {
+        
+    }
+}
