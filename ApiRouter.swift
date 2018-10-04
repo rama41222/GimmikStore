@@ -25,7 +25,11 @@ enum ApiRouter: URLRequestConvertible {
         let url = URL(string: baseUrl.appending(location).removingPercentEncoding!)
         var request = URLRequest(url: url!)
         
-        print(request)
+        request.httpMethod = method.rawValue
+        request.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+        request.timeoutInterval = TimeInterval(10 * 1000)
+        return try URLEncoding.default.encode(request, with: nil)
+        
     }
 
 }
