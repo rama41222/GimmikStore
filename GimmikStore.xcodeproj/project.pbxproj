@@ -22,6 +22,8 @@
 		0D7A66FE2163F04800FF4BA4 /* GimmikStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A66FD2163F04800FF4BA4 /* GimmikStoreUITests.swift */; };
 		4ACE0D33493C33821B307A57 /* Pods_GimmikStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964A572C9F89EA04BDF98D10 /* Pods_GimmikStore.framework */; };
 		4DA7748C779E7F33726F8835 /* Pods_GimmikStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */; };
+		5BA7208621666CDE002CB056 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7208521666CDE002CB056 /* ApiRouter.swift */; };
+		5BA7208821666D05002CB056 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7208721666D05002CB056 /* ApiClient.swift */; };
 		F442D66EFB18A142258D160E /* Pods_GimmikStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B8AD44478512004F13ABF2 /* Pods_GimmikStoreTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		0D7A66FF2163F04800FF4BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GimmikStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F9B92A91908F13217477FE /* Pods-GimmikStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreTests/Pods-GimmikStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BA7208521666CDE002CB056 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = SOURCE_ROOT; };
+		5BA7208721666D05002CB056 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = SOURCE_ROOT; };
 		5C5D1B44F5A999FDC81A5307 /* Pods-GimmikStoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreUITests/Pods-GimmikStoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5D9B3952CAEB3076CF90F947 /* Pods-GimmikStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore.release.xcconfig"; sourceTree = "<group>"; };
 		71B8AD44478512004F13ABF2 /* Pods_GimmikStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GimmikStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +129,8 @@
 		0D37669621640F6200DE868B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				5BA7208521666CDE002CB056 /* ApiRouter.swift */,
+				5BA7208721666D05002CB056 /* ApiClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -360,15 +366,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GimmikStoreUITests-checkManifestLockResult.txt",
 			);
@@ -382,15 +384,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -404,15 +402,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GimmikStoreTests-checkManifestLockResult.txt",
 			);
@@ -426,15 +420,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GimmikStore-checkManifestLockResult.txt",
 			);
@@ -452,9 +442,11 @@
 			files = (
 				0D3766A32164154E00DE868B /* GimmikCollectionViewCell.swift in Sources */,
 				0D37669921640FC100DE868B /* GimmikViewController.swift in Sources */,
+				5BA7208821666D05002CB056 /* ApiClient.swift in Sources */,
 				0D37669F216413C900DE868B /* Gimmik.swift in Sources */,
 				0D37669D216413B400DE868B /* GimmikCollectionViewDelegate.swift in Sources */,
 				0D3766A82164765000DE868B /* Constants.swift in Sources */,
+				5BA7208621666CDE002CB056 /* ApiRouter.swift in Sources */,
 				0D7A66DE2163F04500FF4BA4 /* AppDelegate.swift in Sources */,
 				0D37669B216413A300DE868B /* GimmikCollectionViewDataSource.swift in Sources */,
 			);
