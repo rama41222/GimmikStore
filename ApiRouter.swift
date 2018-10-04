@@ -20,6 +20,13 @@ enum ApiRouter: URLRequestConvertible {
         }
     }
     
+    var location: String {
+        switch self {
+        case .search(let term, let entity, let limit):
+            return "/search?term=\(term)&entity=\(entity)&limit=\(limit)"
+        }
+    }
+    
     func asURLRequest() throws -> URLRequest {
         let baseUrl = Config.BaseUrl
         let url = URL(string: baseUrl.appending(location).removingPercentEncoding!)
