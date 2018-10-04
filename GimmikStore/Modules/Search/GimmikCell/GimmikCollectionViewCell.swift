@@ -10,6 +10,11 @@ import UIKit
 
 class GimmikCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imgApp: UIImageView!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var lblOrganization: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
