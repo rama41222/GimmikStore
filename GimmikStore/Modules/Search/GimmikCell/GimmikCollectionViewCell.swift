@@ -17,7 +17,15 @@ class GimmikCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+//        imgApp.image = nil
         // Initialization code
+    }
+    
+    func fill(with gimmik: Gimmik) -> Void {
+//        imgApp.image = samp
+        lblTitle.text = gimmik.name
+        lblDescription.text = gimmik.description
+        lblOrganization.text = gimmik.organization
     }
 
 }

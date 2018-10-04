@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct Gimmik {
+    var id: String?
+    var name: String?
+    var image: String?
+    var description: String?
+    var organization: String?
+}

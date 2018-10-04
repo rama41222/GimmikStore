@@ -12,7 +12,19 @@ class GimmikViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var gimmikCollectionView: UICollectionView!
     
+    let dataSource: GimmikCollectionViewDataSource = GimmikCollectionViewDataSource()
+    let delegate: GimmikCollectionViewDelegate = GimmikCollectionViewDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+        dataSource.fetch()
+        gimmikCollectionView.reloadData()
+    }
+    
+    func setup() -> Void {
+        gimmikCollectionView.register(UINib(nibName: "GimmikCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "gimmikCell")
+        gimmikCollectionView.dataSource = dataSource
+        gimmikCollectionView.delegate = delegate
     }
 }
