@@ -16,7 +16,7 @@ enum Config {
 }
 
 enum Colors {
-    static let appHeaderColor = UIColor(red: 72/255.0, green: 52/255.0, blue: 212/255.0, alpha: 1.0)
+    static let appHeaderColor = UIColor(red: 237/255.0, green: 76/255.0, blue: 103/255.0, alpha: 1.0)
 }
 
 enum HTTPHeaderField: String {

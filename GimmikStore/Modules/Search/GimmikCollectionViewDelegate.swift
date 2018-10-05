@@ -20,7 +20,6 @@ class GimmikCollectionViewDelegate: NSObject {
     
     func fetch(_ term:String) -> Void {
         dataSource.fetch(term: term)
-        self.viewController?.reloadCollection()
     }
 }
 
@@ -69,8 +68,6 @@ extension GimmikCollectionViewDelegate: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         fetch(searchText)
-        self.viewController?.reloadCollection()
-        print("hautoooo")
     }
 }
 
