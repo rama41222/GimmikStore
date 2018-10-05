@@ -41,3 +41,30 @@ extension GimmikCollectionViewDelegate: UICollectionViewDelegate, UICollectionVi
     }
 }
 
+extension GimmikCollectionViewDelegate: UISearchBarDelegate {
+    private func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        searchBar.resignFirstResponder() 
+        fetch("")
+        viewController?.reloadCollection()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        fetch(searchText)
+        viewController?.reloadCollection()
+    }
+}
+

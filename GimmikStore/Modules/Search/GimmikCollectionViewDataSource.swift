@@ -32,6 +32,7 @@ class GimmikCollectionViewDataSource: NSObject {
                 } else {
                     self.data = result
                 }
+                
             }
         }
     }
@@ -57,7 +58,7 @@ extension GimmikCollectionViewDataSource: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "gimmikCell", for: indexPath) as! GimmikCollectionViewCell
-        cell.fill(with: self.data[indexPath.row])
+        cell.fill(with: filter(at: indexPath))
         return cell
     }
 }
