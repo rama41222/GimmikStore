@@ -45,29 +45,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 }
 
-extension GimmikCollectionViewDelegate: UISearchBarDelegate {
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.text = ""
-        searchBar.resignFirstResponder()
-        dataSource.fetch(term: "")
-        viewController?.reloadCollection()
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
-    }
-    
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        
-    }
-    
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        
-    }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
-        dataSource.fetch(term: searchText)
-        viewController?.reloadCollection()
-    }
 }

@@ -30,7 +30,31 @@ extension GimmikCollectionViewDelegate: UICollectionViewDelegate, UICollectionVi
         return UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 10)
     }
     
+
+}
+
+extension GimmikCollectionViewDelegate: UISearchBarDelegate {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+        dataSource.fetch(term: "")
+        viewController?.reloadCollection()
+    }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+    }
     
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        
+    }
     
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        dataSource.fetch(term: searchText)
+        viewController?.reloadCollection()
 }
