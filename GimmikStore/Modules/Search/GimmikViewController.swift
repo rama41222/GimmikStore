@@ -21,7 +21,7 @@ class GimmikViewController: UIViewController {
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if let keypath = keyPath, keypath == "contentOffset", let gimmikCollectionView = object as? UICollectionView {
+        if let keypath = keyPath, keypath == Observers.contentOffset, let gimmikCollectionView = object as? UICollectionView {
             searchBarTopConstraint.constant = -1 * gimmikCollectionView.contentOffset.y
         }
     }
@@ -29,7 +29,7 @@ class GimmikViewController: UIViewController {
     func setup() -> Void {
         title = Config.appTitle
         searchBar.barTintColor = Colors.appHeaderColor
-        gimmikCollectionView.register(UINib(nibName: "GimmikCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "gimmikCell")
+        gimmikCollectionView.register(UINib(nibName: CustomUIConstants.gimmikCollectionViewCell, bundle: nil), forCellWithReuseIdentifier: CustomUIConstants.gimmikCell)
         delegate = GimmikCollectionViewDelegate(viewController: self)
         gimmikCollectionView.dataSource = delegate.dataSource
         gimmikCollectionView.delegate = delegate
@@ -38,8 +38,8 @@ class GimmikViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
          navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         searchBarTopConstraint.constant = 0.0
-        searchBar.placeholder = "Search"
-        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadData(notification:)), name: NSNotification.Name(rawValue: "DataFetched"), object: nil)
+        searchBar.placeholder = Config.searchPlaceholder
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadData(notification:)), name: NSNotification.Name(rawValue: Events.DataFetched), object: nil)
 
     }
 
@@ -48,7 +48,7 @@ class GimmikViewController: UIViewController {
     }
     
     func addGimmikCollectionViewObserver() -> Void {
-        gimmikCollectionView.addObserver(self, forKeyPath: "contentOffset", options: [.new, .old], context: nil)
+        gimmikCollectionView.addObserver(self, forKeyPath: Observers.contentOffset, options: [.new, .old], context: nil)
     }
     
     @objc func reloadData(notification: NSNotification){

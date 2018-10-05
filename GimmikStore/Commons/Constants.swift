@@ -13,6 +13,16 @@ enum Config {
     static let BaseUrl = "https://itunes.apple.com"
     static let appTitle = "Gimmik Store"
     static let generalUrl = "https://itunes.apple.com/search?term=top&entity=software&limit=200"
+    static let searchPlaceholder = "Search a Gimmik"
+    static let mainStoryboardName = "Main"
+}
+
+enum Events {
+    static let DataFetched = "DataFetched"
+}
+
+enum Observers {
+    static let contentOffset = "contentOffset"
 }
 
 enum Colors {
@@ -25,4 +35,10 @@ enum HTTPHeaderField: String {
 
 enum ContentType: String {
     case json = "application/json"
+}
+
+enum CustomUIConstants {
+    static let gimmikModal = "gimmikModal"
+    static let gimmikCell = "gimmikCell"
+    static let gimmikCollectionViewCell = "GimmikCollectionViewCell"
 }

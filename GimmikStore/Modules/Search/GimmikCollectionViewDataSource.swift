@@ -17,13 +17,12 @@ class GimmikCollectionViewDataSource: NSObject {
         if !term.isEmpty {
             self.data = []
             ApiClient.search(term: term) { result in
-                print(result)
                 guard let result = result?.results else {
                     self.data = []
                     return
                 }
                 self.data = result
-                NotificationCenter.default.post(name: NSNotification.Name("DataFetched"), object: nil)
+                NotificationCenter.default.post(name: NSNotification.Name(Events.DataFetched), object: nil)
             }
         } else {
             self.data = []
@@ -41,7 +40,7 @@ extension GimmikCollectionViewDataSource: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "gimmikCell", for: indexPath) as! GimmikCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomUIConstants.gimmikCell, for: indexPath) as! GimmikCollectionViewCell
         cell.fill(with: filter(at: indexPath))
         return cell
     }
