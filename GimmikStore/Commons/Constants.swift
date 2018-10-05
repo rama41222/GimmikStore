@@ -12,7 +12,7 @@ import UIKit
 enum Config {
     static let BaseUrl = "https://itunes.apple.com"
     static let appTitle = "Gimmik Store"
-    static let generalUrl = "https://itunes.apple.com/search?term=google&entity=software&limit=1"
+    static let generalUrl = "https://itunes.apple.com/search?term=top&entity=software&limit=200"
 }
 
 enum Colors {

@@ -40,7 +40,7 @@ class ModalViewController: UIViewController {
     func setValues() -> Void {
         name.text = gimmik?.getName()
         seller.text = gimmik?.sellerName
-        price.setTitle(gimmik?.getPrice(), for: .normal)
+        price.setTitle(gimmik?.getPrice() ?? "Free", for: .normal)
         image.kf.setImage(with: URL(string: gimmik?.getImageIcon() ?? ""))
         desc.text = gimmik?.getDescription()
         type.text = gimmik?.getKind()

@@ -18,11 +18,11 @@ class GimmikViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        delegate.fetch("")
+//        delegate.fetch("")
     }
     
     override func viewDidAppear(_ animated: Bool) {
-         gimmikCollectionView.reloadData()
+//         reloadCollection()
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -33,18 +33,19 @@ class GimmikViewController: UIViewController {
     
     func setup() -> Void {
         title = Config.appTitle
-        //searchBar.backgroundImage = UIImage()
         searchBar.barTintColor = Colors.appHeaderColor
         gimmikCollectionView.register(UINib(nibName: "GimmikCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "gimmikCell")
         delegate = GimmikCollectionViewDelegate(viewController: self)
-        searchBar.delegate = delegate
         gimmikCollectionView.dataSource = delegate.dataSource
         gimmikCollectionView.delegate = delegate
         addGimmikCollectionViewObserver()
+        searchBar.delegate = delegate
         navigationController?.navigationBar.prefersLargeTitles = true
          navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         searchBarTopConstraint.constant = 0.0
         searchBar.placeholder = "Search"
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadData(notification:)), name: NSNotification.Name(rawValue: "DataFetched"), object: nil)
+
     }
 
     func reloadCollection() -> Void {
@@ -53,6 +54,10 @@ class GimmikViewController: UIViewController {
     
     func addGimmikCollectionViewObserver() -> Void {
         gimmikCollectionView.addObserver(self, forKeyPath: "contentOffset", options: [.new, .old], context: nil)
+    }
+    
+    @objc func reloadData(notification: NSNotification){
+        reloadCollection()
     }
     
 }

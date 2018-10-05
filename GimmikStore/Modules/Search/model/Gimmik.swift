@@ -59,8 +59,8 @@ class Gimmik: Codable {
         return self.trackName
     }
     
-    func getPrice() -> String {
-        return "\(String(describing: self.price ) ?? self.formattedPrice ) \(String(describing: self.curreny) ?? "")))"
+    func getPrice() -> String? {
+        return "\(self.formattedPrice)"
     }
     
     func getKind() -> String? {

@@ -11,47 +11,33 @@ import UIKit
 class GimmikCollectionViewDataSource: NSObject {
     
     private var data: [Gimmik] = []
-    private var searchedData: [Gimmik] = []
-    private var isSearching: Bool = false
     
     func fetch(term: String) -> Void {
         print(term)
-        if term.isEmpty {
-            isSearching  = false
-        } else {
-            isSearching  = true
+        if !term.isEmpty {
+            self.data = []
             ApiClient.search(term: term) { result in
+                print(result)
                 guard let result = result?.results else {
+                    self.data = []
                     return
                 }
-                
-                if self.isSearching {
-                    self.searchedData = result
-                } else {
-                    self.data = result
-                }
-                
+                self.data = result
+                NotificationCenter.default.post(name: NSNotification.Name("DataFetched"), object: nil)
             }
+        } else {
+            self.data = []
         }
     }
     
     func filter(at indexPath: IndexPath) -> Gimmik {
-        if isSearching {
-            return searchedData[indexPath.item]
-        } else {
-            return data[indexPath.item]
-        }
+         return data[indexPath.item]
     }
 }
 
 extension GimmikCollectionViewDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if isSearching {
-            return self.searchedData.count
-        } else {
-            return self.data.count
-        }
-        
+        return self.data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

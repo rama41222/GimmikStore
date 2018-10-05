@@ -14,6 +14,7 @@ class GimmikCollectionViewDelegate: NSObject {
     
     init(viewController: GimmikViewController?) {
         super.init()
+        self.viewController?.searchBar.delegate = self
         self.viewController = viewController
     }
     
@@ -48,29 +49,28 @@ extension GimmikCollectionViewDelegate: UICollectionViewDelegate, UICollectionVi
 
 
 extension GimmikCollectionViewDelegate: UISearchBarDelegate {
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
         searchBar.resignFirstResponder()
         fetch("")
-        viewController?.reloadCollection()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-    
+
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-    
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        fetch(searchBar.text ?? "")
-        viewController?.reloadCollection()
+
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         fetch(searchText)
-        viewController?.reloadCollection()
+        self.viewController?.reloadCollection()
+        print("hautoooo")
     }
 }
 
