@@ -19,11 +19,9 @@ class GimmikCollectionViewDataSource: NSObject {
         if term.isEmpty {
             isSearching  = false
         } else {
-            searchedData.removeAll()
             isSearching  = true
             ApiClient.search(term: term) { result in
                 guard let result = result?.results else {
-                    print("nil")
                     return
                 }
                 

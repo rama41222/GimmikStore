@@ -19,6 +19,7 @@ class GimmikCollectionViewDelegate: NSObject {
     
     func fetch(_ term:String) -> Void {
         dataSource.fetch(term: term)
+        self.viewController?.reloadCollection()
     }
 }
 
@@ -41,24 +42,25 @@ extension GimmikCollectionViewDelegate: UICollectionViewDelegate, UICollectionVi
     }
 }
 
+
 extension GimmikCollectionViewDelegate: UISearchBarDelegate {
-    private func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
-        searchBar.resignFirstResponder() 
+        searchBar.resignFirstResponder()
         fetch("")
         viewController?.reloadCollection()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
+        viewController?.reloadCollection()
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        
+        viewController?.reloadCollection()
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        
+        viewController?.reloadCollection()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
