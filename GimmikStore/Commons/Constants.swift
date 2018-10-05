@@ -7,11 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 enum Config {
     static let BaseUrl = "https://itunes.apple.com"
-    static let appTitle = "GimmikStore"
+    static let appTitle = "Gimmik Store"
     static let generalUrl = "https://itunes.apple.com/search?term=google&entity=software&limit=1"
+}
+
+enum Colors {
+    static let appHeaderColor = UIColor(red: 72/255.0, green: 52/255.0, blue: 212/255.0, alpha: 1.0)
 }
 
 enum HTTPHeaderField: String {

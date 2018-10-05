@@ -25,7 +25,9 @@ class GimmikCollectionViewDelegate: NSObject {
 
 extension GimmikCollectionViewDelegate: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //
+    
+        let viewController:ModalViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "gimmikModal") as! ModalViewController
+        self.viewController?.present(viewController, animated: true, completion: nil)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -65,7 +67,6 @@ extension GimmikCollectionViewDelegate: UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
         fetch(searchText)
         viewController?.reloadCollection()
     }

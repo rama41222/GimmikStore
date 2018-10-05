@@ -33,6 +33,8 @@ class GimmikViewController: UIViewController {
     
     func setup() -> Void {
         title = Config.appTitle
+        //searchBar.backgroundImage = UIImage()
+        searchBar.barTintColor = Colors.appHeaderColor
         gimmikCollectionView.register(UINib(nibName: "GimmikCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "gimmikCell")
         delegate = GimmikCollectionViewDelegate(viewController: self)
         searchBar.delegate = delegate
