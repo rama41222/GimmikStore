@@ -11,6 +11,7 @@ import Foundation
 enum Config {
     static let BaseUrl = "https://itunes.apple.com"
     static let appTitle = "GimmikStore"
+    static let generalUrl = "https://itunes.apple.com/search?term=google&entity=software&limit=1"
 }
 
 enum HTTPHeaderField: String {

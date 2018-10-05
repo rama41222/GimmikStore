@@ -52,14 +52,15 @@ extension GimmikCollectionViewDelegate: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        viewController?.reloadCollection()
+    
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        viewController?.reloadCollection()
+    
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        fetch(searchBar.text ?? "")
         viewController?.reloadCollection()
     }
     

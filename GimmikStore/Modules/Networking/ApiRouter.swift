@@ -29,7 +29,7 @@ enum ApiRouter: URLRequestConvertible {
     
     func asURLRequest() throws -> URLRequest {
         let baseUrl = Config.BaseUrl
-        let url = URL(string: baseUrl.appending(location).removingPercentEncoding!)
+        let url = URL(string: baseUrl.appending(location).removingPercentEncoding ?? Config.generalUrl)
         var request = URLRequest(url: url!)
         
         request.httpMethod = method.rawValue
