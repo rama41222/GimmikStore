@@ -38,5 +38,4 @@ class GimmikCollectionViewCell: UICollectionViewCell {
     func cellSetup() -> Void {
         imgApp.layer.cornerRadius = 10.0
     }
-
 }

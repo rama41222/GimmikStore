@@ -13,13 +13,12 @@ class GimmikViewController: UIViewController {
     @IBOutlet weak var gimmikCollectionView: UICollectionView!
     @IBOutlet weak var searchBarTopConstraint: NSLayoutConstraint!
     
-    let dataSource: GimmikCollectionViewDataSource = GimmikCollectionViewDataSource()
-    let delegate: GimmikCollectionViewDelegate = GimmikCollectionViewDelegate()
+    var delegate: GimmikCollectionViewDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource.fetch(term: "puzzel")
         setup()
+        delegate.fetch("")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,19 +34,15 @@ class GimmikViewController: UIViewController {
     func setup() -> Void {
         title = Config.appTitle
         gimmikCollectionView.register(UINib(nibName: "GimmikCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "gimmikCell")
-        gimmikCollectionView.dataSource = dataSource
+        delegate = GimmikCollectionViewDelegate(viewController: self)
+        searchBar.delegate = delegate
+        gimmikCollectionView.dataSource = delegate.dataSource
         gimmikCollectionView.delegate = delegate
         addGimmikCollectionViewObserver()
         navigationController?.navigationBar.prefersLargeTitles = true
          navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         searchBarTopConstraint.constant = 0.0
-
-       
-        searchBar.barStyle = .default
-    
-        
-        definesPresentationContext = true
-
+        searchBar.placeholder = "Search"
     }
 
     func reloadCollection() -> Void {

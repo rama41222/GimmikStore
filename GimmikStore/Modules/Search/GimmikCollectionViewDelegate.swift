@@ -9,7 +9,17 @@
 import UIKit
 
 class GimmikCollectionViewDelegate: NSObject {
-
+    weak var viewController: GimmikViewController?
+    let dataSource: GimmikCollectionViewDataSource = GimmikCollectionViewDataSource()
+    
+    init(viewController: GimmikViewController?) {
+        super.init()
+        self.viewController = viewController
+    }
+    
+    func fetch(_ term:String) -> Void {
+        dataSource.fetch(term: term)
+    }
 }
 
 extension GimmikCollectionViewDelegate: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -29,8 +39,5 @@ extension GimmikCollectionViewDelegate: UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 10)
     }
-    
-    
-    
-    
 }
+
