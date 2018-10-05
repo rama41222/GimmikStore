@@ -13,9 +13,7 @@ class GimmikCollectionViewDataSource: NSObject {
     private var data: [Gimmik] = []
     
     func fetch(term: String) -> Void {
-        print(term)
         if !term.isEmpty {
-            self.data = []
             ApiClient.search(term: term) { result in
                 guard let result = result?.results else {
                     self.data = []
@@ -24,8 +22,6 @@ class GimmikCollectionViewDataSource: NSObject {
                 self.data = result
                 NotificationCenter.default.post(name: NSNotification.Name(Events.DataFetched), object: nil)
             }
-        } else {
-            self.data = []
         }
     }
     

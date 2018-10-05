@@ -40,7 +40,14 @@ class GimmikViewController: UIViewController {
         searchBarTopConstraint.constant = 0.0
         searchBar.placeholder = Config.searchPlaceholder
         NotificationCenter.default.addObserver(self, selector: #selector(self.reloadData(notification:)), name: NSNotification.Name(rawValue: Events.DataFetched), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.hideKeyboard(notification:)), name: NSNotification.Name(rawValue: Events.HideKeyBoard), object: nil)
+        self.hideKeyboardWhenTappedAround()
 
+    }
+    
+    @objc func hideKeyboard(notification: NSNotification) {
+        print("rec")
+        self.hideKeyboardWhenTappedAround()
     }
 
     func reloadCollection() -> Void {

@@ -35,6 +35,7 @@ class ModalViewController: UIViewController {
         modalView.layer.cornerRadius = 10.0
         modalView.layer.masksToBounds = true
         image.layer.cornerRadius = 10.0
+        self.hideKeyboardWhenTappedAround() 
     }
     
     func setValues() -> Void {

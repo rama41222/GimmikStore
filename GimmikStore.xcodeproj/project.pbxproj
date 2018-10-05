@@ -14,6 +14,7 @@
 		0D3766A32164154E00DE868B /* GimmikCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3766A12164154E00DE868B /* GimmikCollectionViewCell.swift */; };
 		0D3766A42164154E00DE868B /* GimmikCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3766A22164154E00DE868B /* GimmikCollectionViewCell.xib */; };
 		0D3766A82164765000DE868B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3766A72164765000DE868B /* Constants.swift */; };
+		0D3862F82167C7CF00CE18FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3862F72167C7CF00CE18FA /* Extensions.swift */; };
 		0D7A66DE2163F04500FF4BA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A66DD2163F04500FF4BA4 /* AppDelegate.swift */; };
 		0D7A66E32163F04500FF4BA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7A66E12163F04500FF4BA4 /* Main.storyboard */; };
 		0D7A66E52163F04800FF4BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7A66E42163F04800FF4BA4 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		0D3766A12164154E00DE868B /* GimmikCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimmikCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D3766A22164154E00DE868B /* GimmikCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GimmikCollectionViewCell.xib; sourceTree = "<group>"; };
 		0D3766A72164765000DE868B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0D3862F72167C7CF00CE18FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0D7A66DA2163F04500FF4BA4 /* GimmikStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GimmikStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7A66DD2163F04500FF4BA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D7A66E22163F04500FF4BA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				0D3766A72164765000DE868B /* Constants.swift */,
+				0D3862F72167C7CF00CE18FA /* Extensions.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				0D37669F216413C900DE868B /* Gimmik.swift in Sources */,
 				0D37669D216413B400DE868B /* GimmikCollectionViewDelegate.swift in Sources */,
 				0D3766A82164765000DE868B /* Constants.swift in Sources */,
+				0D3862F82167C7CF00CE18FA /* Extensions.swift in Sources */,
 				0DF1919F21674E2C00BAD48A /* CircularButton.swift in Sources */,
 				5BA7208621666CDE002CB056 /* ApiRouter.swift in Sources */,
 				0D7A66DE2163F04500FF4BA4 /* AppDelegate.swift in Sources */,

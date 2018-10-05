@@ -19,6 +19,7 @@ enum Config {
 
 enum Events {
     static let DataFetched = "DataFetched"
+    static let HideKeyBoard = "HideKeyboard"
 }
 
 enum Observers {

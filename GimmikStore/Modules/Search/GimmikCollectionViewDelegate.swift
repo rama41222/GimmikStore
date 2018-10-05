@@ -25,9 +25,7 @@ class GimmikCollectionViewDelegate: NSObject {
 
 extension GimmikCollectionViewDelegate: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
         let viewController:ModalViewController =  UIStoryboard(name: Config.mainStoryboardName, bundle: nil).instantiateViewController(withIdentifier: CustomUIConstants.gimmikModal) as! ModalViewController
-    
         viewController.gimmik = dataSource.filter(at: indexPath)
         self.viewController?.present(viewController, animated: true, completion: nil)
     }
@@ -53,6 +51,7 @@ extension GimmikCollectionViewDelegate: UISearchBarDelegate {
         searchBar.text = ""
         searchBar.resignFirstResponder()
         fetch("")
+        NotificationCenter.default.post(name: NSNotification.Name(Events.HideKeyBoard), object: nil)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
