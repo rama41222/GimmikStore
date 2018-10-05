@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ModalViewController: UIViewController {
-
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var seller: UILabel!
+    @IBOutlet weak var price: CircularButton!
+    @IBOutlet weak var genre: UILabel!
+    @IBOutlet weak var type: UILabel!
+    @IBOutlet weak var desc: UITextView!
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var modalView: UIView!
     var gimmik: Gimmik?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        setValues()
         // Do any additional setup after loading the view.
     }
     
@@ -26,10 +34,17 @@ class ModalViewController: UIViewController {
     func setup() -> Void {
         modalView.layer.cornerRadius = 10.0
         modalView.layer.masksToBounds = true
+        image.layer.cornerRadius = 10.0
     }
     
     func setValues() -> Void {
-        
+        name.text = gimmik?.getName()
+        seller.text = gimmik?.sellerName
+        price.setTitle(gimmik?.getPrice(), for: .normal)
+        image.kf.setImage(with: URL(string: gimmik?.getImageIcon() ?? ""))
+        desc.text = gimmik?.getDescription()
+        type.text = gimmik?.getKind()
+        genre.text = gimmik?.primaryGenreName
     }
     
     func closeView() -> Void {
