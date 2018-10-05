@@ -18,11 +18,6 @@ class GimmikViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-//        delegate.fetch("")
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-//         reloadCollection()
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {

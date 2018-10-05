@@ -59,7 +59,7 @@ class Gimmik: Codable {
         return self.trackName
     }
     
-    func getPrice() -> String? {
+    func getPrice() -> String {
         return "\(self.formattedPrice)"
     }
     
