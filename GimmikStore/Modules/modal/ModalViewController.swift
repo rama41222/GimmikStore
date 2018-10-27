@@ -45,11 +45,7 @@ class ModalViewController: UIViewController {
         desc.text = gimmik?.getDescription()
         type.text = gimmik?.getKind()
         genre.text = gimmik?.primaryGenreName
-        
-        guard let appPrice = gimmik?.getPrice() else {
-            return
-        }
-        price.setTitle("Free", for: .normal)
+        price.setTitle(gimmik?.getPrice(), for: .normal)
 
     }
     
