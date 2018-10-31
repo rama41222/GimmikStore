@@ -116,7 +116,7 @@
 		0D37669421640F3600DE868B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				0DF1919A2167472900BAD48A /* modal */,
+				0DF1919A2167472900BAD48A /* Modal */,
 				0DF1919721667A6300BAD48A /* Navigation */,
 				0D37669621640F6200DE868B /* Networking */,
 				0D37669521640F5A00DE868B /* Search */,
@@ -127,7 +127,7 @@
 		0D37669521640F5A00DE868B /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				0DCCAAD92166507C00374B27 /* model */,
+				0DCCAAD92166507C00374B27 /* Model */,
 				0D3766A02164153400DE868B /* GimmikCell */,
 				0D37669821640FC100DE868B /* GimmikViewController.swift */,
 				0D37669A216413A300DE868B /* GimmikCollectionViewDataSource.swift */,
@@ -218,12 +218,12 @@
 			path = GimmikStoreUITests;
 			sourceTree = "<group>";
 		};
-		0DCCAAD92166507C00374B27 /* model */ = {
+		0DCCAAD92166507C00374B27 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				0D37669E216413C900DE868B /* Gimmik.swift */,
 			);
-			path = model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0DF1919721667A6300BAD48A /* Navigation */ = {
@@ -234,12 +234,12 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		0DF1919A2167472900BAD48A /* modal */ = {
+		0DF1919A2167472900BAD48A /* Modal */ = {
 			isa = PBXGroup;
 			children = (
 				0DF1919B2167475200BAD48A /* ModalViewController.swift */,
 			);
-			path = modal;
+			path = Modal;
 			sourceTree = "<group>";
 		};
 		0DF1919D21674E1700BAD48A /* UILib */ = {

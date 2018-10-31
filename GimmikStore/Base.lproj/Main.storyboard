@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oNG-Du-nVy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.30.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oNG-Du-nVy">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zWJ-qy-vX5" customClass="GimmikCollectionViewCell" customModule="GimmikStore" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="GimmickCollectionViewCell" id="zWJ-qy-vX5" customClass="GimmikCollectionViewCell" customModule="GimmikStore" customModuleProvider="target">
                                         <rect key="frame" x="19.666666666666668" y="0.0" width="375" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -117,11 +117,10 @@
                                             <constraint firstAttribute="height" constant="200" id="ggB-Yh-Hcq"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AnD comPAnD comPAnD comPAnD comP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5H-Kx-bww">
-                                        <rect key="frame" x="35" y="276" width="275" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AnD comPAnD comPAnD comPAnD comP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Y5H-Kx-bww">
+                                        <rect key="frame" x="8" y="276" width="327" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="W8M-0D-3D0"/>
-                                            <constraint firstAttribute="width" constant="275" id="bg7-Gn-KyE"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <nil key="textColor"/>
@@ -132,7 +131,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="39" id="AqW-Zd-Ii6"/>
                                             <constraint firstAttribute="width" secondItem="OOP-gI-9Kz" secondAttribute="height" multiplier="272:39" id="inA-ab-iLW"/>
-                                            <constraint firstAttribute="width" constant="272" id="vdY-dz-i4Q"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="Free">
@@ -206,8 +204,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="4GP-ad-12O" secondAttribute="trailing" constant="8" id="4N7-LZ-M4F"/>
-                                    <constraint firstAttribute="trailing" secondItem="Y5H-Kx-bww" secondAttribute="trailing" constant="33" id="54c-VV-8nG"/>
-                                    <constraint firstAttribute="trailing" secondItem="OOP-gI-9Kz" secondAttribute="trailing" constant="36" id="7JM-db-XoE"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OOP-gI-9Kz" secondAttribute="trailing" constant="20" symbolic="YES" id="4yA-yA-eVO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y5H-Kx-bww" secondAttribute="trailing" constant="8" id="54c-VV-8nG"/>
                                     <constraint firstItem="4GP-ad-12O" firstAttribute="leading" secondItem="Jbm-NO-BsU" secondAttribute="leading" constant="8" id="8Rk-qu-jRL"/>
                                     <constraint firstItem="gWk-ec-1l9" firstAttribute="top" secondItem="Jbm-NO-BsU" secondAttribute="top" constant="8" id="Bkj-4X-FfC"/>
                                     <constraint firstAttribute="trailing" secondItem="gWk-ec-1l9" secondAttribute="trailing" constant="8" id="CPo-09-2tz"/>
@@ -217,10 +215,10 @@
                                     <constraint firstItem="4GP-ad-12O" firstAttribute="top" secondItem="Y5H-Kx-bww" secondAttribute="bottom" constant="8" id="aKk-X5-xm1"/>
                                     <constraint firstAttribute="bottom" secondItem="4GP-ad-12O" secondAttribute="bottom" constant="61" id="eya-Kx-bqo"/>
                                     <constraint firstAttribute="trailing" secondItem="Iuy-Lr-QBd" secondAttribute="trailing" constant="72" id="fcJ-yh-UDp"/>
-                                    <constraint firstItem="OOP-gI-9Kz" firstAttribute="leading" secondItem="Jbm-NO-BsU" secondAttribute="leading" constant="35" id="ggz-Vo-W6P"/>
                                     <constraint firstItem="Iuy-Lr-QBd" firstAttribute="top" secondItem="Jbm-NO-BsU" secondAttribute="top" constant="65" id="hAA-gG-xy5"/>
                                     <constraint firstAttribute="height" constant="515" id="iSr-yA-GRx"/>
-                                    <constraint firstItem="Y5H-Kx-bww" firstAttribute="leading" secondItem="Jbm-NO-BsU" secondAttribute="leading" constant="35" id="kXu-7s-8jq"/>
+                                    <constraint firstItem="Y5H-Kx-bww" firstAttribute="leading" secondItem="Jbm-NO-BsU" secondAttribute="leading" constant="8" id="kXu-7s-8jq"/>
+                                    <constraint firstItem="OOP-gI-9Kz" firstAttribute="leading" secondItem="Jbm-NO-BsU" secondAttribute="leading" constant="35" id="m7U-rD-ln9"/>
                                     <constraint firstItem="4GP-ad-12O" firstAttribute="centerX" secondItem="Jbm-NO-BsU" secondAttribute="centerX" id="qHM-Bo-QIz"/>
                                     <constraint firstAttribute="bottom" secondItem="OOP-gI-9Kz" secondAttribute="bottom" constant="14" id="ykT-TD-mUc"/>
                                 </constraints>
@@ -268,6 +266,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sample" width="420" height="315"/>
+        <image name="sample" width="210" height="157"/>
     </resources>
 </document>

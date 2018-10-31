@@ -24,7 +24,6 @@ class ModalViewController: UIViewController {
         super.viewDidLoad()
         setup()
         setValues()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func closeBtn(_ sender: CircularButton) {

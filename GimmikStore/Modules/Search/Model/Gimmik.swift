@@ -13,14 +13,6 @@ struct GimmikResult: Codable {
     var results: [Gimmik]?
 }
 
-//struct Gimmik: Codable {
-//    var id: String?
-//    var name: String?
-//    var image: String?
-//    var description: String?
-//    var organization: String?
-//}
-
 class Gimmik: Codable {
     var bundleId: String?
     var isGameCenterEnabled: Bool?

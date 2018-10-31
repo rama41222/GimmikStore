@@ -17,6 +17,4 @@ class GimmikNavigationController: UINavigationController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return topViewController?.preferredStatusBarStyle ?? .lightContent
     }
-    
-    
 }

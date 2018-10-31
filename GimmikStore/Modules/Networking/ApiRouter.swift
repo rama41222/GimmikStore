@@ -28,8 +28,7 @@ enum ApiRouter: URLRequestConvertible {
     }
     
     func encode(_ term: String) -> String {
-        let escapedAddress = term.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
-        return escapedAddress ?? ""
+        return term.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? ""
     }
     
     func asURLRequest() throws -> URLRequest {
