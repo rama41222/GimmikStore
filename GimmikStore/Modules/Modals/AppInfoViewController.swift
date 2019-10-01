@@ -116,6 +116,8 @@ class AppInfoViewController: UIViewController {
         return button
     }()
     
+    let transition = ModalTransition()
+    
     // MARK: - Content models
     
     let gimmik: Gimmik
@@ -125,6 +127,9 @@ class AppInfoViewController: UIViewController {
     init(gimmik: Gimmik) {
         self.gimmik = gimmik
         super.init(nibName: nil, bundle: nil)
+        transitioningDelegate = transition
+        modalPresentationStyle = .custom
+        preferredContentSize = CGSize(width: 300, height: 500)
     }
     
     required init?(coder: NSCoder) {
@@ -133,9 +138,15 @@ class AppInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
         applyConstaints()
         applyContent()
+    }
+    
+    func configureView() {
         view.backgroundColor = .white
+        view.layer.masksToBounds = true
+        view.layer.cornerRadius = 10
     }
     
     func applyConstaints() {
