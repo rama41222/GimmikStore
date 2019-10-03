@@ -22,12 +22,14 @@
 		0D7A66F32163F04800FF4BA4 /* GimmikStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A66F22163F04800FF4BA4 /* GimmikStoreTests.swift */; };
 		0D7A66FE2163F04800FF4BA4 /* GimmikStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A66FD2163F04800FF4BA4 /* GimmikStoreUITests.swift */; };
 		0DF1919921667A9D00BAD48A /* GimmikNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF1919821667A9D00BAD48A /* GimmikNavigationController.swift */; };
-		0DF1919C2167475200BAD48A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF1919B2167475200BAD48A /* ModalViewController.swift */; };
 		0DF1919F21674E2C00BAD48A /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF1919E21674E2C00BAD48A /* CircularButton.swift */; };
 		4ACE0D33493C33821B307A57 /* Pods_GimmikStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964A572C9F89EA04BDF98D10 /* Pods_GimmikStore.framework */; };
 		4DA7748C779E7F33726F8835 /* Pods_GimmikStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */; };
 		5BA7208621666CDE002CB056 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7208521666CDE002CB056 /* ApiRouter.swift */; };
 		5BA7208821666D05002CB056 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7208721666D05002CB056 /* ApiClient.swift */; };
+		94CDE09D234363AA00545FF1 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CDE09C234363AA00545FF1 /* AppInfoViewController.swift */; };
+		94CDE0A02343651F00545FF1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CDE09F2343651F00545FF1 /* UIColor.swift */; };
+		94CDE0A323437B7900545FF1 /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CDE0A223437B7900545FF1 /* ModalPresentationController.swift */; };
 		F442D66EFB18A142258D160E /* Pods_GimmikStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B8AD44478512004F13ABF2 /* Pods_GimmikStoreTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +72,6 @@
 		0D7A66FD2163F04800FF4BA4 /* GimmikStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimmikStoreUITests.swift; sourceTree = "<group>"; };
 		0D7A66FF2163F04800FF4BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DF1919821667A9D00BAD48A /* GimmikNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimmikNavigationController.swift; sourceTree = "<group>"; };
-		0DF1919B2167475200BAD48A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		0DF1919E21674E2C00BAD48A /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GimmikStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F9B92A91908F13217477FE /* Pods-GimmikStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreTests/Pods-GimmikStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +81,9 @@
 		5D9B3952CAEB3076CF90F947 /* Pods-GimmikStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore.release.xcconfig"; sourceTree = "<group>"; };
 		71B8AD44478512004F13ABF2 /* Pods_GimmikStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GimmikStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF20E48AAD947CFC39828A6 /* Pods-GimmikStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreTests/Pods-GimmikStoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		94CDE09C234363AA00545FF1 /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
+		94CDE09F2343651F00545FF1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		94CDE0A223437B7900545FF1 /* ModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
 		964A572C9F89EA04BDF98D10 /* Pods_GimmikStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GimmikStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69EC2FF77239A3E95F86FA9 /* Pods-GimmikStoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStoreUITests/Pods-GimmikStoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3A25901C6CC1CACEBD1AD7D /* Pods-GimmikStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GimmikStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,7 +120,7 @@
 		0D37669421640F3600DE868B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				0DF1919A2167472900BAD48A /* modal */,
+				0DF1919A2167472900BAD48A /* Modals */,
 				0DF1919721667A6300BAD48A /* Navigation */,
 				0D37669621640F6200DE868B /* Networking */,
 				0D37669521640F5A00DE868B /* Search */,
@@ -188,6 +192,7 @@
 		0D7A66DC2163F04500FF4BA4 /* GimmikStore */ = {
 			isa = PBXGroup;
 			children = (
+				94CDE09E2343651000545FF1 /* Extensions */,
 				0DF1919D21674E1700BAD48A /* UILib */,
 				0D3766A52164762D00DE868B /* Commons */,
 				0D37669421640F3600DE868B /* Modules */,
@@ -234,17 +239,18 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		0DF1919A2167472900BAD48A /* modal */ = {
+		0DF1919A2167472900BAD48A /* Modals */ = {
 			isa = PBXGroup;
 			children = (
-				0DF1919B2167475200BAD48A /* ModalViewController.swift */,
+				94CDE09C234363AA00545FF1 /* AppInfoViewController.swift */,
 			);
-			path = modal;
+			path = Modals;
 			sourceTree = "<group>";
 		};
 		0DF1919D21674E1700BAD48A /* UILib */ = {
 			isa = PBXGroup;
 			children = (
+				94CDE0A123437B6100545FF1 /* ModalPresenter */,
 				0DF1919E21674E2C00BAD48A /* CircularButton.swift */,
 			);
 			path = UILib;
@@ -271,6 +277,22 @@
 				17DBB2298EC4F46D88F5AD4E /* Pods_GimmikStoreUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94CDE09E2343651000545FF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94CDE09F2343651F00545FF1 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		94CDE0A123437B6100545FF1 /* ModalPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				94CDE0A223437B7900545FF1 /* ModalPresentationController.swift */,
+			);
+			path = ModalPresenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,9 +509,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3766A32164154E00DE868B /* GimmikCollectionViewCell.swift in Sources */,
+				94CDE0A323437B7900545FF1 /* ModalPresentationController.swift in Sources */,
 				0D37669921640FC100DE868B /* GimmikViewController.swift in Sources */,
 				0DF1919921667A9D00BAD48A /* GimmikNavigationController.swift in Sources */,
-				0DF1919C2167475200BAD48A /* ModalViewController.swift in Sources */,
+				94CDE0A02343651F00545FF1 /* UIColor.swift in Sources */,
+				94CDE09D234363AA00545FF1 /* AppInfoViewController.swift in Sources */,
 				5BA7208821666D05002CB056 /* ApiClient.swift in Sources */,
 				0D37669F216413C900DE868B /* Gimmik.swift in Sources */,
 				0D37669D216413B400DE868B /* GimmikCollectionViewDelegate.swift in Sources */,

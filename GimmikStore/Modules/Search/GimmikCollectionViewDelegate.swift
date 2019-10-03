@@ -25,9 +25,9 @@ class GimmikCollectionViewDelegate: NSObject {
 
 extension GimmikCollectionViewDelegate: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let viewController:ModalViewController =  UIStoryboard(name: Config.mainStoryboardName, bundle: nil).instantiateViewController(withIdentifier: CustomUIConstants.gimmikModal) as! ModalViewController
-        viewController.gimmik = dataSource.filter(at: indexPath)
-        self.viewController?.present(viewController, animated: true, completion: nil)
+        let gimmik = dataSource.filter(at: indexPath)
+        let vc = AppInfoViewController(gimmik: gimmik)
+        self.viewController?.present(vc, animated: true, completion: nil)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
