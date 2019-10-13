@@ -118,6 +118,9 @@ class AppInfoViewController: UIViewController {
     
     let transition = ModalTransition()
     
+    var presentedScreenshot = 0
+    var slideshow: [String?]?
+  
     // MARK: - Content models
     
     let gimmik: Gimmik
@@ -197,12 +200,34 @@ class AppInfoViewController: UIViewController {
         type.text = gimmik.getKind()
         genre.text = gimmik.primaryGenreName
         price.setTitle(gimmik.getPrice(), for: .normal)
+        startScreenshotSlideshow()
+      }
+    
+      func startScreenshotSlideshow() {
+          slideshow = gimmik.screenshotUrls
+          slideshow?.append(gimmik.getImageIcon()) // include appIcon in slideshow
+          Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true) { timer in
+            guard let screenshotUrl = self.slideshow?[self.presentedScreenshot] else { return }
+          
+            self.image.kf.setImage(
+              with: URL(string: screenshotUrl ),
+              options: [
+                  .scaleFactor(UIScreen.main.scale),
+                  .transition(.fade(1)),
+                  .forceTransition
+                ])
+            
+            guard let slideshow = self.slideshow else { return }
+            self.presentedScreenshot = self.presentedScreenshot < slideshow.count - 1 ? self.presentedScreenshot + 1:0
+        }
     }
     
     // MARK: - Callback methods
     
     @objc
     func close(_ sender: UIButton) {
+        presentedScreenshot = 0
+        slideshow = nil
         dismiss(animated: true)
     }
     
