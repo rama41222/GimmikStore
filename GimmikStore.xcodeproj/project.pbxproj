@@ -367,13 +367,16 @@
 				TargetAttributes = {
 					0D7A66D92163F04400FF4BA4 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1300;
 					};
 					0D7A66ED2163F04800FF4BA4 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = 0D7A66D92163F04400FF4BA4;
 					};
 					0D7A66F82163F04800FF4BA4 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = 0D7A66D92163F04400FF4BA4;
 					};
 				};
@@ -450,19 +453,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GimmikStore/Pods-GimmikStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GimmikStore/Pods-GimmikStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GimmikStore/Pods-GimmikStore-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GimmikStore/Pods-GimmikStore-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F81BCA62F2C1517EC12B7A03 /* [CP] Check Pods Manifest.lock */ = {
@@ -708,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.viyana.GimmikStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -728,7 +728,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.viyana.GimmikStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -749,7 +749,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.viyana.GimmikStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GimmikStore.app/GimmikStore";
 			};
@@ -771,7 +771,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.viyana.GimmikStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GimmikStore.app/GimmikStore";
 			};
@@ -792,7 +792,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.viyana.GimmikStoreUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GimmikStore;
 			};
@@ -813,7 +813,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.viyana.GimmikStoreUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GimmikStore;
 			};
